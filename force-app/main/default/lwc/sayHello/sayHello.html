@@ -1,5 +1,9 @@
 <template>
-    <lightning-card>
-    <p>Hello, I have started</p>
-    </lightning-card>
+    <lightning-card title="Using @api decorator">
+    <p>Hello, {parent}</p>
+    <lightning-button label="Click Me" onclick={handlemessage}></lightning-button>
+        <lightning-button label="Click To Change" onclick={chnagemessage}></lightning-button>
+
+<c-say-hello-child></c-say-hello-child>
+</lightning-card>
 </template>
