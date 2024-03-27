@@ -1,4 +1,4 @@
-import { createElement } from 'lwc';
+import { createElement } from 'lwc/';
 import SayHello from 'c/sayHello';
 
 describe('c-say-hello', () => {

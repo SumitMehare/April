@@ -5,5 +5,20 @@
         <lightning-button label="Click To Change" onclick={chnagemessage}></lightning-button>
 
 <c-say-hello-child></c-say-hello-child>
+    </br>
+     </br>
+<p>Using @wire Decorator</p>
+<template if:true={AccountList.data}>
+    <template for:each={AccountList.data} for:item="acclist">
+        <p key = {acclist.Id}>{acclist.Name}</p>
+        <p key = {acclist.Id}>{acclist.Phone}</p>
+    </template>
+</template>
+    </br>
+     </br>
+     <lightning-input label="@track" value={greeting} onchange={onChangeHandler}></lightning-input>
+     <template if:true={greeting}>
+        <h2>{greeting}</h2>
+     </template>
 </lightning-card>
 </template>
