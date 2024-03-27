@@ -1,10 +1,9 @@
 <template>
     <lightning-card title="Using @api decorator">
+        <c-say-hello-child parent-to-child = {greeting}></c-say-hello-child>
     <p>Hello, {parent}</p>
     <lightning-button label="Click Me" onclick={handlemessage}></lightning-button>
         <lightning-button label="Click To Change" onclick={chnagemessage}></lightning-button>
-
-<c-say-hello-child></c-say-hello-child>
     </br>
      </br>
 <p>Using @wire Decorator</p>
